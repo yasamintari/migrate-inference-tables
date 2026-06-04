@@ -48,16 +48,6 @@ After migration completes:
 - Spot-check sample records for data integrity
 - Update any downstream dashboards or queries to point to the new tables
 
-## Architecture
-
-```
-v1 AI Gateway                    Unity AI Gateway
-┌──────────────────┐            ┌──────────────────┐
-│  Inference       │            │  Unity Catalog   │
-│  Tables (HMS)    │  ────────> │  Inference       │
-│                  │   migrate  │  Tables          │
-└──────────────────┘            └──────────────────┘
-```
 
 ## Notes
 
