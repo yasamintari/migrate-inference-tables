@@ -1,6 +1,6 @@
 ## Overview
 
-This notebook automates the migration of inference tables (request/response logs from model serving endpoints) from the v1 AI Gateway architecture to Unity AI Gateway. 
+This notebook automates the migration of inference tables (request/response logs from model serving endpoints) from the v1 AI Gateway architecture to Unity AI Gateway in Databricks. 
 
 ## What Gets Migrated
 
