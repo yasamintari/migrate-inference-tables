@@ -1,10 +1,6 @@
-# Migrate Inference Tables
-
-Migrate inference tables from the legacy **v1 AI Gateway** to the new **Unity AI Gateway** in Databricks.
-
 ## Overview
 
-This notebook automates the migration of inference tables (request/response logs from model serving endpoints) from the v1 AI Gateway architecture to Unity AI Gateway. This migration is necessary when upgrading your model serving infrastructure to take advantage of Unity Catalog's governance, lineage tracking, and centralized access control.
+This notebook automates the migration of inference tables (request/response logs from model serving endpoints) from the v1 AI Gateway architecture to Unity AI Gateway. 
 
 ## What Gets Migrated
 
@@ -15,7 +11,7 @@ This notebook automates the migration of inference tables (request/response logs
 ## Prerequisites
 
 - Databricks workspace with Unity Catalog enabled
-- Access to both the source v1 AI Gateway inference tables and the target Unity Catalog
+- Access to the source v1 AI Gateway inference tables and target catalog/schema
 - Appropriate permissions:
   - `SELECT` on source inference tables
   - `CREATE TABLE` on target catalog/schema
@@ -31,7 +27,7 @@ Update the following parameters in the notebook:
 |-----------|-------------|
 | `source_catalog` | Source catalog containing v1 inference tables |
 | `source_schema` | Source schema name |
-| `target_catalog` | Destination Unity Catalog |
+| `target_catalog` | Destination Catalog |
 | `target_schema` | Destination schema |
 | `endpoint_names` | List of endpoints to migrate (or `*` for all) |
 
